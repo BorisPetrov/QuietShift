@@ -11,10 +11,13 @@
 ## Как запустить
 
 ```bash
-godot --path quiet-shift
+git clone https://github.com/BorisPetrov/QuietShift.git
+cd QuietShift
+godot --path .
 ```
 
-Или: Godot → Import → выбрать папку `quiet-shift` → Run (F5).
+Или: Godot → Import → выбрать `project.godot` в корне репозитория → Run (F5).
+При первом открытии Godot пересоберёт кэш `.godot/` — он не хранится в git.
 Ассетов-файлов нет вообще: мир, тела, звук и интерфейс собираются кодом,
 поэтому проект не тянет за собой бинарники и открывается сразу.
 
