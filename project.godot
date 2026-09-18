@@ -1,0 +1,31 @@
+; Engine configuration file.
+; «Тихая смена» — вертикальный срез.
+; Настройки ввода задаются в коде (scripts/game.gd :: _setup_input),
+; чтобы проект открывался в любой сборке Godot 4.x без правки InputMap.
+
+config_version=5
+
+[application]
+
+config/name="Тихая смена"
+config/description="Космический ремонтник на заброшенной узловой станции. Вертикальный срез: реальное время, физика, нуар."
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/stretch/mode="canvas_items"
+
+[physics]
+
+common/physics_ticks_per_second=60
+3d/default_gravity=7.4
+
+[rendering]
+
+anti_aliasing/quality/msaa_3d=2
+environment/defaults/default_clear_color=Color(0.039, 0.051, 0.063, 1)
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=3
